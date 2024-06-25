@@ -29,7 +29,7 @@
     }
 
     .guiaInstalacao > div > h1{
-        font-size: 2em;
+        font-size: 1.7em;
     }
 
     .guiaInstalacao > div{
@@ -39,6 +39,7 @@
     .guiaInstalacao > div > ul{
         list-style-position: inside;
         font-size: 0.8em;
+        width: 200px;
     }
 
     .termosUso > h1{
