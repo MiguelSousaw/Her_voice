@@ -38,6 +38,7 @@
 
     .guiaInstalacao > div > ul{
         list-style-position: inside;
+        font-size: 0.8em;
     }
 
     .termosUso > h1{
