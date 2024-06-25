@@ -1,0 +1,49 @@
+@media screen and (max-width: 640px){
+    nav {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    nav > h1{
+        grid-row: 2/3;
+        font-size: 1.5em;
+        grid-column: 1/2;
+        justify-self: center;
+        align-self: center;
+    }
+
+    nav > img{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        justify-self: center;
+        align-self: end;
+        width: 10%;
+    }
+
+    .visaoGeral > #txt{
+        font-size: 1em;
+    }
+
+    .guiaInstalacao > div > ul{
+        font-size: 1em;
+    }
+
+    .guiaInstalacao > div{
+        padding: 50px;
+    }
+
+    .termosUso > h1{
+        font-size: 2.5em;
+    }
+
+    .termosUso > article > ul{
+        font-size: 0.9em;
+    }
+
+    .termosUso > article > p{
+        font-size: 1em;
+    }
+
+    .termosUso > article > h2{
+        font-size: 1.2em;
+    }
+}

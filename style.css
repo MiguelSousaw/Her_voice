@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor1: #D4B7FF;
+    --cor2: #D3A6E8;
+    --cor3: #FCC3FF;
+    --cor4: #E8A6CD;
+    --cor5: #FFB7BD;
+}
+
+@font-face {
+    font-family: 'oswald';
+    src: url(../fontes/Oswald/Oswald-VariableFont_wght.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(../fontes/Inter/Inter-VariableFont_slnt\,wght.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "manrope";
+    src: url(../fontes/Manrope/Manrope-VariableFont_wght.ttf) format(truetype);
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    background-color: var(--cor2);
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+nav > h1{
+    grid-column: 2/4;
+    justify-self: start;
+    align-self: center;
+    font-size: 2.4em;
+    font-family: "oswald";
+    font-weight: normal;
+    color: var(--cor5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.778);
+}
+
+nav > img{
+  grid-column: 1/2;
+  justify-self: center;
+  align-self: center;
+  width: 30%;
+  border-radius: 50%;
+}
+
+
+.visaoGeral{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #D4B7FF;
+    font-family: 'manrope';
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.536);
+    padding: 50px;
+}
+
+.visaoGeral > #logo{
+    justify-self: center;
+    align-self: center;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.visaoGeral > #logo > h1{
+    font-size: 2em;
+    color: #E8A6CD;
+    font-family: 'oswald';
+}
+
+#logo > img{
+    width: 50%;
+    border-radius: 20px;
+}
+
+.visaoGeral > #txt{
+    text-align: justify;
+    color: white;
+    font-size: 1.5em;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+h1{
+    color: var(--cor5);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.726);
+    font-family: "oswald";
+}
+
+.guiaInstalacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: #b89ae4;
+    padding: 30px;
+}
+
+.guiaInstalacao > div{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    height: auto;
+    width: 80%;
+    background-color: #E8A6CD;
+    border-radius: 30px;
+    padding: 50px;
+}
+
+.guiaInstalacao > div > h1{
+    margin-bottom: 50px;
+    font-size: 2em;
+}
+
+.guiaInstalacao > div > ul{
+    font-size: 1.5em;
+    color: aliceblue;
+    width: 400px;
+    font-family: 'inter';
+    text-align: justify;
+    list-style-position: inside;
+    list-style-image: url(../imagem/check-mark.png);
+}
+
+
+.termosUso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D4B7FF;
+    height: auto;
+    padding: 40px;
+}
+
+.termosUso > h1{
+    font-size: 3em;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.termosUso > article{
+    width: 80%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.termosUso > article > h2{
+    text-align: center;
+    font-family: 'oswald';
+    color: #E8A6CD;
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.719);
+    margin-bottom: 30px;
+}
+
+.termosUso > article > ul > li{
+    list-style-position: inside;
+    list-style-type: none;
+    margin-left: 30px;
+    text-align: justify;
+    font-size: 1.1em;
+    font-family: 'inter';
+    color: #9d65f1;
+}
+
+.termosUso > article > p{
+    font-size: 1.2em;
+    font-family: 'inter';
+    text-align: justify;
+    color: #9d65f1;
+   
+}
+
+.wavesContent{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(180deg, var(--cor1), var(--cor4));
+}
+
+.waves{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.wave-1 {
+    animation: moveWave1 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave1 {
+    from {
+      transform: translateX(-2000px);
+    }
+}
+
+.wave-2 {
+    animation: moveWave2 3s 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave2 {
+    from {
+      transform: translateX(-1800px);
+    }
+}
+
+.wave-3 {
+    animation: moveWave3 3s 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave3 {
+    from {
+      transform: translateX(-1600px);
+    }
+}
