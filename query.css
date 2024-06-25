@@ -5,7 +5,7 @@
     }
     nav > h1{
         grid-row: 2/3;
-        font-size: 1.5em;
+        font-size: 1.2em;
         grid-column: 1/2;
         justify-self: center;
         align-self: center;
@@ -24,11 +24,20 @@
     }
 
     .guiaInstalacao > div > ul{
-        font-size: 1em;
+        font-size: 0.8em;
+        list-style-position: inside;
+    }
+
+    .guiaInstalacao > div > h1{
+        font-size: 2em;
     }
 
     .guiaInstalacao > div{
         padding: 50px;
+    }
+
+    .guiaInstalacao > div > ul{
+        list-style-position: inside;
     }
 
     .termosUso > h1{
